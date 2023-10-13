@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Orem South Rim HOA</title>
+        <link rel="shortcut icon" type="image/svg" href="/images/favicon.svg" />
+        <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+        <script src="https://github.mckaysalisbury.com/McBlocks/McBlocks/McBlocks.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://github.mckaysalisbury.com/McBlocks/McBlocks/McBlocks.css" />
+        <style>
+            body {
+                margin:0;
+                background-color: #aac;
+            }
+            #header {
+                background-color: #96c0ce;
+                background-size: cover;
+                height: 200px;
+                overflow: hidden;
+            }
+            #headerText {
+                font-size:54pt;
+                text-align: center;
+                color: white;
+                padding:20px;
+            }
+            #limiter {
+                margin: auto;
+                width:85%;
+                /* max-width: 1100px; */
+                text-align: center;
+            }
+            #blocksArea {
+                margin: auto;
+            }
+            #spacer {
+                width:100%;
+                background-color: #55c;
+                min-height:30px;
+                margin-bottom:5px;
+            }
+
+            #rules > div > .blockContentImage {
+                width: 75px;
+            }
+
+            .mainBlock {
+                margin: 5px;
+                text-align: center;
+                color:black;
+                background-color: white;
+            }
+
+            .blockContentText {
+                font-size: 64pt;
+            }
+
+            #mcblocks {
+                position: fixed;
+                bottom: 0;
+                left: 20px;
+            }
+        </style>
+        <script>
+            McBlocks.Add(
+                "#blocksArea",
+                [
+                    { id: "rules", header: "Rules of the Community", href: "rules-10.6.12.pdf", contentText: "📄" },
+                    { id: "subdivision", header: "Utah County subdivision", image: "https://www.utahcounty.gov/apps/LeenaCanvas/Package-HTML/HTML/images/Utah%20County%20Logo%20Small.png", href: "https://www.utahcounty.gov/landrecords/DevelopmentDetailMap.asp?avid=17414&avmap=9523&avbkpg=52919", alt: "Utah County logo" },
+                    { id: "map", header: "Utah County subdivision blueprint", image: "https://www.utahcounty.gov/apps/LeenaCanvas/Package-HTML/HTML/images/Utah%20County%20Logo%20Small.png", href: "https://bmiweb.utahcounty.gov/BmiWeb/?database=Mapfilings&page=Document&MAP_NO=9523", alt: "Utah County logo" },
+                    { id: "contact", header: "Contact", contentText: "📧", href: "mailto:hoasouthrim@gmail.com" },
+                    { id: "ccnr", header: "CC&R", contentText: "📃", href: "cc&r.pdf" },
+                ]
+            )
+        </script>
+    </head>
+
+    <body>
+        <div id="header" style="background-image: url('pano.jpg')">
+        </div>
+        <div id="spacer">
+            <div id="headerText">
+                Orem South Rim HOA
+            </div>
+        </div>
+        <div id="limiter">
+            <div id="blocksArea"></div>
+        </div>
+        <h6 id="mcblocks">Made with <a href="https://github.com/mckaysalisbury/McBlocks/">McBlocks</a></h6>
+    </body>
+</html>
