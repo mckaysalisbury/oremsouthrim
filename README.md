@@ -1,2 +1,2 @@
 # oremsouthrim
-A repo for the south rim website
+A repo for the [Orem South Rim website](https://github.mckaysalisbury.com/oremsouthrim/)
